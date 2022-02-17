@@ -9,7 +9,7 @@ production:
     name: catalog_tmp
     tags:
       - latest
-    latest: latest
+    latest: ""
     signature: 0
   mirror:
     enabled: 1
@@ -24,6 +24,9 @@ production:
     username:
       in: mavala
       out: mavala
+  test:
+    installation_skip:
+      - ack-
 
 pipeline:
   base: https://github.com
